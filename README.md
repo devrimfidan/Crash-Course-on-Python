@@ -1,4 +1,5 @@
 # Crash Course on Python
+Coursera exercises from the crash course on python
 
 ## Learning Objectives
 - Differentiate and convert between different data types utilizing variables
