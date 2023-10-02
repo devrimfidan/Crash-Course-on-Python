@@ -1,35 +1,35 @@
-# 1) Complete the function to return the result of the conversion
-def convert_distance(miles):
-	km = miles * 1.6  # approximately 1.6 km in 1 mile
-	return km
+name = "Diego"
+fav_food = "lasagna"
+print(name + "’s favorite food is " + fav_food)
 
-# Do not indent any of the following lines of code as they are 
-# meant to be located outside of the function above
+#######
 
-my_trip_miles = 55
+def exam_grade(score):
+    if score >= 95:
+        grade = "Top Score"
+    elif score >= 60:
+        grade = "Pass"
+    else:
+        grade = "Fail"
+    return grade
 
-# 2) Convert my_trip_miles to kilometers by calling the function above
-my_trip_km = convert_distance(my_trip_miles)
-
-# 3) Fill in the blank to print the result of the my_trip_km conversion
-print("The distance in kilometers is " + str(my_trip_km))
-
-# 4) Calculate the round-trip in kilometers by doubling the result of
-#    my_trip_km. Fill in the blank to print the result.
-print("The round-trip in kilometers is " + str(my_trip_km*2))
+print(exam_grade(65)) # Should print Pass
+print(exam_grade(55)) # Should print Fail
+print(exam_grade(60)) # Should print Pass
+print(exam_grade(95)) # Should print Pass
+print(exam_grade(100)) # Should print Top Score
+print(exam_grade(0)) # Should print Fail
 
 
-#############
+#####
 
-# This function compares two numbers and returns them
-# in increasing order.
-def order_numbers(number1, number2):
-	if number2 > number1:
-		return number1, number2
-	else:
-		return number2, number1
-
-# 1) Fill in the blanks so the print statement displays the result
-#    of the function call
-smaller, bigger = order_numbers(100, 99)
-print(smaller, bigger)
+def identify_IP(IP_address):
+    if IP_address == "192.168.1.1":
+        IP_description = "Network router"
+    elif IP_address == "8.8.8.8" or IP_address == "8.8.4.4":
+        IP_description = "Google DNS server"
+    elif IP_address == "142.250.191.46":
+        IP_description = "Google.com"
+    else:
+        IP_description = "unknown"
+    return IP_description
